@@ -3,6 +3,6 @@ export default function ({dispatch}) {
         if (!action.payload || !action.payload.then) {
             return next(action);
         }
-        console.log('We dont have a promise', action);
+        console.log('We have a promise', action);
     };
 }
